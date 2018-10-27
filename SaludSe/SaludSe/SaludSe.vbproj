@@ -1,0 +1,823 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FD17C7F3-5168-4906-9A8F-9FAA4E70B177}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SaludSe.My.MyApplication</StartupObject>
+    <RootNamespace>SaludSe</RootNamespace>
+    <AssemblyName>SaludSe</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SaludSe.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SaludSe.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Inicio\MenuAdmin.Designer.vb">
+      <DependentUpon>MenuAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\MenuAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Inicio\InicioSesion.designer.vb">
+      <DependentUpon>InicioSesion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\InicioSesion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\ABMs.Designer.vb">
+      <DependentUpon>ABMs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\ABMs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\cursos\ABMcurso.Designer.vb">
+      <DependentUpon>ABMcurso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\cursos\ABMcurso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\cursos\cursoAlta.Designer.vb">
+      <DependentUpon>cursoAlta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\cursos\cursoAlta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\cursos\cursoBaja.Designer.vb">
+      <DependentUpon>cursoBaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\cursos\cursoBaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\cursos\cursoModificacion.Designer.vb">
+      <DependentUpon>cursoModificacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\cursos\cursoModificacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\pagos\abmPagos.Designer.vb">
+      <DependentUpon>abmPagos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\pagos\abmPagos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\pagos\abmPagosAgregar.Designer.vb">
+      <DependentUpon>abmPagosAgregar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\pagos\abmPagosAgregar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\pagos\abmPagosBorrar.Designer.vb">
+      <DependentUpon>abmPagosBorrar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\pagos\abmPagosBorrar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\pagos\abmPagosModificar.Designer.vb">
+      <DependentUpon>abmPagosModificar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\pagos\abmPagosModificar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\pedidos\abmPed.designer.vb">
+      <DependentUpon>abmPed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\pedidos\abmPed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\pedidos\abmPedidoAgregar.Designer.vb">
+      <DependentUpon>abmPedidoAgregar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\pedidos\abmPedidoAgregar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\pedidos\abmPedidoBorrar.Designer.vb">
+      <DependentUpon>abmPedidoBorrar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\pedidos\abmPedidoBorrar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\pedidos\abmPedidoModificar.Designer.vb">
+      <DependentUpon>abmPedidoModificar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\pedidos\abmPedidoModificar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\Productos\ABM Productos.designer.vb">
+      <DependentUpon>ABM Productos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\Productos\ABM Productos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\Productos\BorradoProducto.designer.vb">
+      <DependentUpon>BorradoProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\Productos\BorradoProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\Productos\ModiProducto.designer.vb">
+      <DependentUpon>ModiProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\Productos\ModiProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\Sectores\ABM Sector.designer.vb">
+      <DependentUpon>ABM Sector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\Sectores\ABM Sector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\Sectores\BorradoSector.designer.vb">
+      <DependentUpon>BorradoSector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\Sectores\BorradoSector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\Sectores\ModiSector.designer.vb">
+      <DependentUpon>ModiSector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\Sectores\ModiSector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\servicios\abmServi.Designer.vb">
+      <DependentUpon>abmServi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\servicios\abmServi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\servicios\abmServiAgregar.designer.vb">
+      <DependentUpon>abmServiAgregar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\servicios\abmServiAgregar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\servicios\abmServiBorrar.Designer.vb">
+      <DependentUpon>abmServiBorrar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\servicios\abmServiBorrar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\servicios\abmServiModificar.designer.vb">
+      <DependentUpon>abmServiModificar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\ABMs\servicios\abmServiModificar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\MenuAdministracion.Designer.vb">
+      <DependentUpon>MenuAdministracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\MenuAdministracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Administrar personal\AdministrarPersonal.Designer.vb">
+      <DependentUpon>AdministrarPersonal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Administrar personal\AdministrarPersonal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Administrar personal\ContratoEmpleado.Designer.vb">
+      <DependentUpon>ContratoEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Administrar personal\ContratoEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Administrar personal\GenerarContratoEmpleado.Designer.vb">
+      <DependentUpon>GenerarContratoEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Administrar personal\GenerarContratoEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Administrar personal\IngresarEmpleado.Designer.vb">
+      <DependentUpon>IngresarEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Administrar personal\IngresarEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Capacitacion de los empleados\Capacitacion de los empleados.designer.vb">
+      <DependentUpon>Capacitacion de los empleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Capacitacion de los empleados\Capacitacion de los empleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Capacitacion de los empleados\Informe de capacitacion.designer.vb">
+      <DependentUpon>Informe de capacitacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Capacitacion de los empleados\Informe de capacitacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Empleado.Designer.vb">
+      <DependentUpon>Empleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Empleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Gestionar ausencias\GestionarAusencias.Designer.vb">
+      <DependentUpon>GestionarAusencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Gestionar ausencias\GestionarAusencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Gestionar ausencias\RegistroAusenciavb.Designer.vb">
+      <DependentUpon>RegistroAusenciavb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Gestionar ausencias\RegistroAusenciavb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\MenuStock.Designer.vb">
+      <DependentUpon>MenuStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\MenuStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Stock\ComprobantePe.designer.vb">
+      <DependentUpon>ComprobantePe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Stock\ComprobantePe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Stock\PedidosDevolucion.designer.vb">
+      <DependentUpon>PedidosDevolucion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Stock\PedidosDevolucion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Stock\Reposicion de stock.designer.vb">
+      <DependentUpon>Reposicion de stock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Stock\Reposicion de stock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Verificaciones\CEgresos.Designer.vb">
+      <DependentUpon>CEgresos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Verificaciones\CEgresos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Verificaciones\CIngresos.Designer.vb">
+      <DependentUpon>CIngresos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Verificaciones\CIngresos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Verificaciones\Menu de verificaciones.designer.vb">
+      <DependentUpon>Menu de verificaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Verificaciones\Menu de verificaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Verificaciones\VDifSucu.Designer.vb">
+      <DependentUpon>VDifSucu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Verificaciones\VDifSucu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Verificaciones\VPagaderegalia.Designer.vb">
+      <DependentUpon>VPagaderegalia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Verificaciones\VPagaderegalia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Verificaciones\VSuministroS.Designer.vb">
+      <DependentUpon>VSuministroS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Verificaciones\VSuministroS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Verificaciones\VUtiMarca.Designer.vb">
+      <DependentUpon>VUtiMarca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdmintracion\Verificaciones\VUtiMarca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorElaboracion\InformeCapacitacion\GenerarInformeCapacitacion.Designer.vb">
+      <DependentUpon>GenerarInformeCapacitacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorElaboracion\InformeCapacitacion\GenerarInformeCapacitacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorElaboracion\InformeCapacitacion\InformeCapacitacion.Designer.vb">
+      <DependentUpon>InformeCapacitacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorElaboracion\InformeCapacitacion\InformeCapacitacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorElaboracion\MenuElaboracion.Designer.vb">
+      <DependentUpon>MenuElaboracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorElaboracion\MenuElaboracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorElaboracion\Menus\AgregarMenu.Designer.vb">
+      <DependentUpon>AgregarMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorElaboracion\Menus\AgregarMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorElaboracion\Menus\Menus.Designer.vb">
+      <DependentUpon>Menus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorElaboracion\Menus\Menus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorElaboracion\PedidosE\DetallePedidoE.Designer.vb">
+      <DependentUpon>DetallePedidoE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorElaboracion\PedidosE\DetallePedidoE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorElaboracion\PedidosE\PedidosE.Designer.vb">
+      <DependentUpon>PedidosE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorElaboracion\PedidosE\PedidosE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorElaboracion\Plantilla\Plantilla.designer.vb">
+      <DependentUpon>Plantilla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorElaboracion\Plantilla\Plantilla.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorElaboracion\Recetas\AgregarReceta.designer.vb">
+      <DependentUpon>AgregarReceta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorElaboracion\Recetas\AgregarReceta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorElaboracion\Recetas\Recetas.designer.vb">
+      <DependentUpon>Recetas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorElaboracion\Recetas\Recetas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorEntrega\Documents\HojaDeRuta.Designer.vb">
+      <DependentUpon>HojaDeRuta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorEntrega\Documents\HojaDeRuta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorEntrega\Documents\OrdenDeEntrega.Designer.vb">
+      <DependentUpon>OrdenDeEntrega.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorEntrega\Documents\OrdenDeEntrega.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorEntrega\MenuEntregas.Designer.vb">
+      <DependentUpon>MenuEntregas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorEntrega\MenuEntregas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorProductos\ABM\Productos\Productos.Designer.vb">
+      <DependentUpon>Productos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorProductos\ABM\Productos\Productos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorProductos\ABM\Productos\ProductosAlta.designer.vb">
+      <DependentUpon>ProductosAlta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorProductos\ABM\Productos\ProductosAlta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorProductos\ABM\Productos\ProductosModificar.designer.vb">
+      <DependentUpon>ProductosModificar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorProductos\ABM\Productos\ProductosModificar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorProductos\ABM\Proveedores\CargarProveedor.designer.vb">
+      <DependentUpon>CargarProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorProductos\ABM\Proveedores\CargarProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorProductos\ABM\Proveedores\ModificarProveedores.Designer.vb">
+      <DependentUpon>ModificarProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorProductos\ABM\Proveedores\ModificarProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorProductos\ABM\Proveedores\Proveedores.designer.vb">
+      <DependentUpon>Proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorProductos\ABM\Proveedores\Proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorProductos\ABM\TipoProducto\CargaModifTP.designer.vb">
+      <DependentUpon>CargaModifTP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorProductos\ABM\TipoProducto\CargaModifTP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorProductos\ABM\TipoProducto\TipoProducto.designer.vb">
+      <DependentUpon>TipoProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorProductos\ABM\TipoProducto\TipoProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorProductos\Documentos\OrdenCompra.designer.vb">
+      <DependentUpon>OrdenCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorProductos\Documentos\OrdenCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorProductos\Menu\MenuProductos.Designer.vb">
+      <DependentUpon>MenuProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorProductos\Menu\MenuProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorProductos\Procedimientos\ControlCalidad\CargaControlCalidad2.Designer.vb">
+      <DependentUpon>CargaControlCalidad2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorProductos\Procedimientos\ControlCalidad\CargaControlCalidad2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorProductos\Procedimientos\ControlCalidad\CargarControlCalidad.Designer.vb">
+      <DependentUpon>CargarControlCalidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorProductos\Procedimientos\ControlCalidad\CargarControlCalidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorProductos\Procedimientos\ControlCalidad\ControlCalidad.Designer.vb">
+      <DependentUpon>ControlCalidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorProductos\Procedimientos\ControlCalidad\ControlCalidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorProductos\Procedimientos\ControlCalidad\ModificarControlCalidad.Designer.vb">
+      <DependentUpon>ModificarControlCalidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorProductos\Procedimientos\ControlCalidad\ModificarControlCalidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorProductos\Procedimientos\ControlCalidad\VerificarControlCalidad.Designer.vb">
+      <DependentUpon>VerificarControlCalidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorProductos\Procedimientos\ControlCalidad\VerificarControlCalidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorProductos\Procedimientos\Pedidos\PedidosProductos.Designer.vb">
+      <DependentUpon>PedidosProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorProductos\Procedimientos\Pedidos\PedidosProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorProductos\Procedimientos\Pedidos\PedidosSolicitados.Designer.vb">
+      <DependentUpon>PedidosSolicitados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorProductos\Procedimientos\Pedidos\PedidosSolicitados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorProductos\Procedimientos\RecepcionarM\RecepcionarM.Designer.vb">
+      <DependentUpon>RecepcionarM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SectorProductos\Procedimientos\RecepcionarM\RecepcionarM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilidades\Funciones.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Inicio\MenuAdmin.resx">
+      <DependentUpon>MenuAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio\InicioSesion.resx">
+      <DependentUpon>InicioSesion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\ABMs\ABMs.resx">
+      <DependentUpon>ABMs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\ABMs\cursos\ABMcurso.resx">
+      <DependentUpon>ABMcurso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\ABMs\cursos\cursoAlta.resx">
+      <DependentUpon>cursoAlta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\ABMs\cursos\cursoBaja.resx">
+      <DependentUpon>cursoBaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\ABMs\cursos\cursoModificacion.resx">
+      <DependentUpon>cursoModificacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\ABMs\pagos\abmPagos.resx">
+      <DependentUpon>abmPagos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\ABMs\pagos\abmPagosAgregar.resx">
+      <DependentUpon>abmPagosAgregar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\ABMs\pagos\abmPagosBorrar.resx">
+      <DependentUpon>abmPagosBorrar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\ABMs\pagos\abmPagosModificar.resx">
+      <DependentUpon>abmPagosModificar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\ABMs\pedidos\abmPed.resx">
+      <DependentUpon>abmPed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\ABMs\pedidos\abmPedidoAgregar.resx">
+      <DependentUpon>abmPedidoAgregar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\ABMs\pedidos\abmPedidoBorrar.resx">
+      <DependentUpon>abmPedidoBorrar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\ABMs\pedidos\abmPedidoModificar.resx">
+      <DependentUpon>abmPedidoModificar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\ABMs\Productos\ABM Productos.resx">
+      <DependentUpon>ABM Productos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\ABMs\Productos\BorradoProducto.resx">
+      <DependentUpon>BorradoProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\ABMs\Productos\ModiProducto.resx">
+      <DependentUpon>ModiProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\ABMs\Sectores\ABM Sector.resx">
+      <DependentUpon>ABM Sector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\ABMs\Sectores\BorradoSector.resx">
+      <DependentUpon>BorradoSector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\ABMs\Sectores\ModiSector.resx">
+      <DependentUpon>ModiSector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\ABMs\servicios\abmServi.resx">
+      <DependentUpon>abmServi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\ABMs\servicios\abmServiAgregar.resx">
+      <DependentUpon>abmServiAgregar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\ABMs\servicios\abmServiBorrar.resx">
+      <DependentUpon>abmServiBorrar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\ABMs\servicios\abmServiModificar.resx">
+      <DependentUpon>abmServiModificar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\MenuAdministracion.resx">
+      <DependentUpon>MenuAdministracion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\Administrar personal\AdministrarPersonal.resx">
+      <DependentUpon>AdministrarPersonal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\Administrar personal\ContratoEmpleado.resx">
+      <DependentUpon>ContratoEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\Administrar personal\GenerarContratoEmpleado.resx">
+      <DependentUpon>GenerarContratoEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\Administrar personal\IngresarEmpleado.resx">
+      <DependentUpon>IngresarEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\Capacitacion de los empleados\Capacitacion de los empleados.resx">
+      <DependentUpon>Capacitacion de los empleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\Capacitacion de los empleados\Informe de capacitacion.resx">
+      <DependentUpon>Informe de capacitacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\Empleado.resx">
+      <DependentUpon>Empleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\Gestionar ausencias\GestionarAusencias.resx">
+      <DependentUpon>GestionarAusencias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\Gestionar ausencias\RegistroAusenciavb.resx">
+      <DependentUpon>RegistroAusenciavb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\MenuStock.resx">
+      <DependentUpon>MenuStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\Stock\ComprobantePe.resx">
+      <DependentUpon>ComprobantePe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\Stock\PedidosDevolucion.resx">
+      <DependentUpon>PedidosDevolucion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\Stock\Reposicion de stock.resx">
+      <DependentUpon>Reposicion de stock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\Verificaciones\CEgresos.resx">
+      <DependentUpon>CEgresos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\Verificaciones\CIngresos.resx">
+      <DependentUpon>CIngresos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\Verificaciones\Menu de verificaciones.resx">
+      <DependentUpon>Menu de verificaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\Verificaciones\VDifSucu.resx">
+      <DependentUpon>VDifSucu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\Verificaciones\VPagaderegalia.resx">
+      <DependentUpon>VPagaderegalia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\Verificaciones\VSuministroS.resx">
+      <DependentUpon>VSuministroS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdmintracion\Verificaciones\VUtiMarca.resx">
+      <DependentUpon>VUtiMarca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorElaboracion\InformeCapacitacion\GenerarInformeCapacitacion.resx">
+      <DependentUpon>GenerarInformeCapacitacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorElaboracion\InformeCapacitacion\InformeCapacitacion.resx">
+      <DependentUpon>InformeCapacitacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorElaboracion\MenuElaboracion.resx">
+      <DependentUpon>MenuElaboracion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorElaboracion\Menus\AgregarMenu.resx">
+      <DependentUpon>AgregarMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorElaboracion\Menus\Menus.resx">
+      <DependentUpon>Menus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorElaboracion\PedidosE\DetallePedidoE.resx">
+      <DependentUpon>DetallePedidoE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorElaboracion\PedidosE\PedidosE.resx">
+      <DependentUpon>PedidosE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorElaboracion\Plantilla\Plantilla.resx">
+      <DependentUpon>Plantilla.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorElaboracion\Recetas\AgregarReceta.resx">
+      <DependentUpon>AgregarReceta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorElaboracion\Recetas\Recetas.resx">
+      <DependentUpon>Recetas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorEntrega\Documents\HojaDeRuta.resx">
+      <DependentUpon>HojaDeRuta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorEntrega\Documents\OrdenDeEntrega.resx">
+      <DependentUpon>OrdenDeEntrega.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorEntrega\MenuEntregas.resx">
+      <DependentUpon>MenuEntregas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorProductos\ABM\Productos\Productos.resx">
+      <DependentUpon>Productos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorProductos\ABM\Productos\ProductosAlta.resx">
+      <DependentUpon>ProductosAlta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorProductos\ABM\Productos\ProductosModificar.resx">
+      <DependentUpon>ProductosModificar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorProductos\ABM\Proveedores\CargarProveedor.resx">
+      <DependentUpon>CargarProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorProductos\ABM\Proveedores\ModificarProveedores.resx">
+      <DependentUpon>ModificarProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorProductos\ABM\Proveedores\Proveedores.resx">
+      <DependentUpon>Proveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorProductos\ABM\TipoProducto\CargaModifTP.resx">
+      <DependentUpon>CargaModifTP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorProductos\ABM\TipoProducto\TipoProducto.resx">
+      <DependentUpon>TipoProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorProductos\Documentos\OrdenCompra.resx">
+      <DependentUpon>OrdenCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorProductos\Menu\MenuProductos.resx">
+      <DependentUpon>MenuProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorProductos\Procedimientos\ControlCalidad\CargaControlCalidad2.resx">
+      <DependentUpon>CargaControlCalidad2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorProductos\Procedimientos\ControlCalidad\CargarControlCalidad.resx">
+      <DependentUpon>CargarControlCalidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorProductos\Procedimientos\ControlCalidad\ControlCalidad.resx">
+      <DependentUpon>ControlCalidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorProductos\Procedimientos\ControlCalidad\ModificarControlCalidad.resx">
+      <DependentUpon>ModificarControlCalidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorProductos\Procedimientos\ControlCalidad\VerificarControlCalidad.resx">
+      <DependentUpon>VerificarControlCalidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorProductos\Procedimientos\Pedidos\PedidosProductos.resx">
+      <DependentUpon>PedidosProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorProductos\Procedimientos\Pedidos\PedidosSolicitados.resx">
+      <DependentUpon>PedidosSolicitados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorProductos\Procedimientos\RecepcionarM\RecepcionarM.resx">
+      <DependentUpon>RecepcionarM.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SectorDistribucion\" />
+    <Folder Include="SectorFranquicias\" />
+    <Folder Include="SectorMonetario\" />
+    <Folder Include="SectorRRHH\" />
+    <Folder Include="SectorVentas\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SectorProductos\Resources\OrdenCompra.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
